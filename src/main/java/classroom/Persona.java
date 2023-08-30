@@ -6,10 +6,6 @@ public class Persona {
     String nombre;
     static int totalPersonas;
     
-    static {
-        totalPersonas = 0;
-    }
-
     public Persona(long cedula, String nombre) {
         this.cedula = cedula;
         this.nombre = nombre;
@@ -30,7 +26,7 @@ public class Persona {
 
     public Persona(String nombre) {
         this.nombre = "";
-        this.cedula++;
+        this.cedula = 1;
         totalPersonas++;
     }
     
